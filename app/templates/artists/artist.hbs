@@ -1,0 +1,11 @@
+{{model.name}}
+{{#each model.songs as |song|}}
+  <hr>
+
+  <b>{{song.title}}</b>
+  <br>
+  {{#each (split '/' song.quote) as |line|}}
+    {{line}}
+    <br>
+  {{/each}}
+{{/each}}
