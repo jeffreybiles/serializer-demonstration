@@ -1,0 +1,6 @@
+<ul>
+{{#each model as |book|}}
+  <li>{{#link-to 'books.book' book.id}}{{book.title}}{{/link-to}}</li>
+{{/each}}
+</ul>
+{{outlet}}

@@ -1,0 +1,9 @@
+{{model.title}}
+{{#each model.quotes as |quote|}}
+  <hr>
+  <br>
+  {{#each (split '/' quote.body) as |line|}}
+    {{line}}
+    <br>
+  {{/each}}
+{{/each}}
