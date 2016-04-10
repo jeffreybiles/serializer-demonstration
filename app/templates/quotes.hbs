@@ -1,0 +1,5 @@
+<ul>
+{{#each model as |quote|}}
+  <li>{{#link-to 'quote' quote.id}}{{quote.id}}:{{truncate 40 quote.body}}...{{/link-to}}</li>
+{{/each}}
+</ul>
