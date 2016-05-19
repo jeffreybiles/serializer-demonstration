@@ -1,4 +1,4 @@
-import DS from 'ember-data';
+import BaseSerializer from './base';
 
-export default DS.JSONAPISerializer.extend({
+export default BaseSerializer.extend({
 });
