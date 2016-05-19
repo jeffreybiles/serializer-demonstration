@@ -7,10 +7,12 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('books', function(){
-    this.route('book', {path: ":book_id"})
-  })
-  this.route('quotes');
-  this.route('quote', {path: 'quotes/:quote_id'});
+    this.route('book', {path: ":book_id"});
+    this.route('new');
+  });
+  this.route('quotes', function(){
+    this.route('quote', {path: ':quote_id'});
+  });
 });
 
 export default Router;
